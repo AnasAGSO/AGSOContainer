@@ -28,7 +28,7 @@ WORKDIR /
 # code generation capabilities, or if you will be compiling your own mex files
 # with gcc, g++, or gfortran.
 #
-#RUN apt-get update -y && apt-get install -y gcc g++ gfortran && apt-get clean && apt-get -y autoremove && rm -rf /var/lib/apt/lists/*
+RUN apt-get update -y && apt-get install -y gcc g++ gfortran && apt-get clean && apt-get -y autoremove && rm -rf /var/lib/apt/lists/*
 
 # Uncomment the following RUN apt-get statement to enable running a program
 # that makes use of MATLAB's Engine API for C and Fortran
